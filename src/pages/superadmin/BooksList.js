@@ -42,7 +42,7 @@ const BookList = () => {
 
   // Category data
   const categories = [
-    "Default",
+    "All",
     "History and Geography",
     "Literature",
     "Psychology and Philosophy",
