@@ -89,8 +89,9 @@ const UserListSuperAdmin = () => {
 
   //Dropdown category and search
   const filteredData = userList.filter((item) =>
-    selectedCategory === "All" || item.course === selectedCategory
-      ? item.lastname.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    selectedCategory === 'All' || item.course === selectedCategory
+      ? String(item.studentNumber).includes(searchQuery) ||
+        item.lastname.toLowerCase().includes(searchQuery.toLowerCase()) ||
         item.firstname.toLowerCase().includes(searchQuery.toLowerCase()) ||
         item.middlename.toLowerCase().includes(searchQuery.toLowerCase()) ||
         item.course.toLowerCase().includes(searchQuery.toLowerCase()) ||
