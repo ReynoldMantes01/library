@@ -75,8 +75,8 @@ const UserListAdmin = () => {
     {
       studentNumber: 20220000,
       lastname: 'Yunting',
-      firstname: 'Johannes Paulus',
-      middlename: 'Dikoalam',
+      firstname: 'Joannes Paulus',
+      middlename: 'Magan',
       course: 'BSCS',
       email: 'joannespaulusyunting.scc@gmail.com',
     },

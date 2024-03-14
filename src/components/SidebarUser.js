@@ -1,18 +1,10 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
-import {
-  TbLayoutSidebarRightExpandFilled,
-  TbLayoutSidebarLeftExpandFilled,
-  TbSettings,
-} from "react-icons/tb";
+import {TbLayoutSidebarRightExpandFilled, TbLayoutSidebarLeftExpandFilled,TbSettings,} from "react-icons/tb";
 import { MdDashboard } from "react-icons/md";
 import { GiBookshelf } from "react-icons/gi";
-import {
-  IoIosHelpCircle,
-  IoIosHelpCircleOutline,
-  IoIosLogOut,
-} from "react-icons/io";
+import {IoIosHelpCircle, IoIosHelpCircleOutline, IoIosLogOut,} from "react-icons/io";
 import Profile from "../assets/profile.jpg";
 
 import { handleLogout } from "./Logout";
@@ -24,12 +16,12 @@ const SidebarUser = () => {
   const isActive = (path) => {
     return location.pathname === path;
   };
-
- 
   
   return (
     <div>
       {!isOpen ? (
+
+        // Maliit na sidebar
         <div className="relative top-0 left-0 h-full w-20 bg-maroon z-50 transition-sidebar rounded-r-xl">
           <ul className="flex flex-col h-full gap-2">
             <li className="text-3xl text-center px-4 py-3 m-2 text-white hover:text-blue hover:rounded-xl cursor-pointer" onClick={() => setisOpen(true)}>
@@ -70,10 +62,14 @@ const SidebarUser = () => {
             </div>
           </ul>
         </div>
+
       ) : (
+
+        // Malaking sidebar
         <div className="relative top-0 left-0 h-full bg-maroon w-72 rounded-r-xl transition-sidebar">
           <ul className="flex flex-col min-h-screen gap-2">
             <div className="flex items-center m-2 p-2">
+              
               <img
                 src={Profile}
                 alt="cooler"
@@ -91,10 +87,7 @@ const SidebarUser = () => {
                 </h1>
               </div>
 
-              <div
-                className="text-3xl ml-auto text-white mb-2 hover:text-blue cursor-pointer"
-                onClick={() => setisOpen(!isOpen)}
-              >
+              <div className="text-3xl ml-auto text-white mb-2 hover:text-blue cursor-pointer" onClick={() => setisOpen(!isOpen)}>
                 <TbLayoutSidebarRightExpandFilled />
               </div>
             </div>

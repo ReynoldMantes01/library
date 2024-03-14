@@ -24,6 +24,8 @@ const SidebarSuperAdmin = () => {
   return (
     <div>
       {!isOpen ? (
+
+        //Maliit na sidebar
         <div className="relative top-0 left-0 h-full w-20 bg-maroon z-50 transition-sidebar rounded-r-xl">
           <ul className="flex flex-col h-full gap-2">
             <li
@@ -67,7 +69,10 @@ const SidebarSuperAdmin = () => {
             </div>
           </ul>
         </div>
+
       ) : (
+
+        // Malaking sidebar
         <div className="relative top-0 left-0 h-full bg-maroon w-72 rounded-r-xl transition-sidebar">
           <ul className="flex flex-col min-h-screen gap-2">
             <div className="flex items-center m-2 p-2">
