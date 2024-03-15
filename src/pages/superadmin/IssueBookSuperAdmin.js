@@ -18,7 +18,7 @@ const IssueBook = () => {
             <BiSearch className="text-3xl mx-2 my-2 sm:text-4xl" />
             <input
               type="text"
-              placeholder="Search..."
+              placeholder="Search"
               className="w-full px-4 py-3 border border-opacity-25 rounded-3xl focus:outline-none focus:ring-1"
             />
           </div>
