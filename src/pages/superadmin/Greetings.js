@@ -4,7 +4,7 @@ import React from 'react';
 const Greetings = () => {
   const currentDate = new Date();
   const hour = currentDate.getHours();
-  const username = 'Juan';
+  const username = 'Administrator';
 
 
   const formattedTime = currentDate.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
